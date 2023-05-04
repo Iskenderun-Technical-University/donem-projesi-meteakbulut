@@ -31,8 +31,8 @@ namespace Diş_Kliniği_Otomasyonu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -55,16 +55,6 @@ namespace Diş_Kliniği_Otomasyonu
             this.panel1.Size = new System.Drawing.Size(595, 100);
             this.panel1.TabIndex = 0;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(118, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(443, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DİŞ KLİNİĞİ OTOMASYONU";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -74,6 +64,16 @@ namespace Diş_Kliniği_Otomasyonu
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(118, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(443, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DİŞ KLİNİĞİ OTOMASYONU";
             // 
             // label2
             // 
@@ -173,7 +173,7 @@ namespace Diş_Kliniği_Otomasyonu
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(277, 22);
             this.label4.TabIndex = 6;
-            this.label4.Text = "BALIKESİR DENTAL KLİNİK";
+            this.label4.Text = "BALiKESİR DENTAL KLİNİK";
             // 
             // Form1
             // 
