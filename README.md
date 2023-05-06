@@ -21,5 +21,10 @@ Projenin geliştirilmesinde aşağıdaki teknolojiler kullanılacaktır:
 
 Projenin veritabanı tabloları arasında hasta bilgileri, randevular, tedaviler, faturalar ve reçeteler yer alacaktır. Bu tablolar, verilerin doğru bir şekilde saklanmasını ve kolayca erişilebilmesini sağlayacaktır.
 
+![](https://i.hizliresim.com/aqiswo1.PNG)
+![](https://i.hizliresim.com/h9qe9f7.PNG)
+
+Yukarıdaki gibi tablolar desteğiyle projenin veritabanını oluşturacağım.
+
 
 
