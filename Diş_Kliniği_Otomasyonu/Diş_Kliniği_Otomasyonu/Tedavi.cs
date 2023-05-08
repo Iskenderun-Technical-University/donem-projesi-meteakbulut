@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Diş_Kliniği_Otomasyonu
 {
-    public partial class Anasayfa : Form
+    public partial class Tedavi : Form
     {
-        public Anasayfa()
+        public Tedavi()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

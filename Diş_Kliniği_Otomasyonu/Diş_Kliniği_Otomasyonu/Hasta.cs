@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Diş_Kliniği_Otomasyonu
 {
-    public partial class Anasayfa : Form
+    public partial class Hasta: Form
     {
-        public Anasayfa()
+        public Hasta()
         {
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Hasta_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
