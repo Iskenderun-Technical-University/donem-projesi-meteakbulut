@@ -75,3 +75,7 @@ C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otoma
 C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.csproj.CopyComplete
 C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.exe
 C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.pdb
+C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.Hasta.resources
+C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.Randevu.resources
+C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.Reçeteler.resources
+C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.Tedavi.resources

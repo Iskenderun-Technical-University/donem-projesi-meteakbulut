@@ -31,8 +31,8 @@ namespace Diş_Kliniği_Otomasyonu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -52,18 +52,8 @@ namespace Diş_Kliniği_Otomasyonu
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(595, 100);
+            this.panel1.Size = new System.Drawing.Size(664, 100);
             this.panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(118, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(443, 36);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DİŞ KLİNİĞİ OTOMASYONU";
             // 
             // pictureBox1
             // 
@@ -74,6 +64,16 @@ namespace Diş_Kliniği_Otomasyonu
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(118, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(443, 36);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DİŞ KLİNİĞİ OTOMASYONU";
             // 
             // label2
             // 
@@ -112,7 +112,7 @@ namespace Diş_Kliniği_Otomasyonu
             this.guna2TextBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(187, 207);
+            this.guna2TextBox1.Location = new System.Drawing.Point(199, 207);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
@@ -136,7 +136,7 @@ namespace Diş_Kliniği_Otomasyonu
             this.guna2TextBox2.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(187, 259);
+            this.guna2TextBox2.Location = new System.Drawing.Point(199, 259);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -180,7 +180,7 @@ namespace Diş_Kliniği_Otomasyonu
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(595, 423);
+            this.ClientSize = new System.Drawing.Size(664, 426);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.guna2TextBox2);
@@ -193,6 +193,7 @@ namespace Diş_Kliniği_Otomasyonu
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
