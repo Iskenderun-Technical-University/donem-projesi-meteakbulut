@@ -24,12 +24,22 @@ namespace Diş_Kliniği_Otomasyonu
             DataSet ds = Hs.ShowHasta(query);
             HastaDGV.DataSource = ds.Tables[0];
         }
+        void reset()
+        {
+            HAdSoyadTb.Text = "";
+            HTelefonTb.Text = "";
+            AdresTb.Text = "";
+            HDogumTarihi.Text = "";
+            HCinsiyetCb.SelectedItem = "";
+            AlerjiTb.Text = "";
+        }
 
 
 
         private void Hasta_Load(object sender, EventArgs e)
         {
             uyeler();
+            reset();
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -46,6 +56,7 @@ namespace Diş_Kliniği_Otomasyonu
                 Hs.HastaEkle(query);
                 MessageBox.Show("Hasta Başarıyla Eklendi");
                 uyeler();
+                reset();
 
 
             }catch(Exception Ex)
@@ -93,6 +104,7 @@ namespace Diş_Kliniği_Otomasyonu
                     Hs.HastaSil(query);
                     MessageBox.Show("Hasta başarıyla silindi.");
                     uyeler();
+                    reset();
                     
                 }
                    catch(Exception Ex)
@@ -102,6 +114,31 @@ namespace Diş_Kliniği_Otomasyonu
                 
             }
             
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            Hastalar Hs = new Hastalar();
+            if (key == 0)
+            {
+                MessageBox.Show("Güncellenecek hastayı seçiniz.");
+            }
+            else
+            {
+                try
+                {
+                    string query = "Update HastaTbl set HAd='"+HAdSoyadTb.Text+"', HTelefon='"+HTelefonTb.Text+"', HAdres='"+AdresTb.Text+"', HDTarih='"+HDogumTarihi.Text+"', HCinsiyet='"+HCinsiyetCb.SelectedItem.ToString()+"', HAlerji='"+AlerjiTb.Text+"' where HId=" + key + ";";
+                    Hs.HastaSil(query);
+                    MessageBox.Show("Hasta başarıyla güncellendi.");
+                    uyeler();
+                    reset();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+
+            }
         }
     }
 }

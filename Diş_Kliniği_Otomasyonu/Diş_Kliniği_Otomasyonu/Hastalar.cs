@@ -32,6 +32,17 @@ namespace Diş_Kliniği_Otomasyonu
             komut.ExecuteNonQuery();
             baglanti.Close();
         }
+        public void HastaGüncelle(string query)
+        {
+            ConnectionString MyConnection = new ConnectionString();
+            SqlConnection baglanti = MyConnection.GetCon();
+            SqlCommand komut = new SqlCommand();
+            komut.Connection = baglanti;
+            baglanti.Open();
+            komut.CommandText = query;
+            komut.ExecuteNonQuery();
+            baglanti.Close();
+        }
 
         public DataSet ShowHasta(string query)
         {
