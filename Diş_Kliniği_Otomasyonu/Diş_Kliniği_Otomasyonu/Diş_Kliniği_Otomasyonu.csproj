@@ -191,6 +191,7 @@
     <Compile Include="Tedavi.Designer.cs">
       <DependentUpon>Tedavi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tedaviler.cs" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </EmbeddedResource>
