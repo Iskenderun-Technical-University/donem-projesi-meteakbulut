@@ -29,20 +29,19 @@ namespace Diş_Kliniği_Otomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Randevu));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientButton5 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton4 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2GradientButton3 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.SaatCb = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.Rtarih = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,12 +49,13 @@ namespace Diş_Kliniği_Otomasyonu
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.RadCb = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.RtedaviCb = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.RandevuDgv = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RandevuDgv)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GradientButton5
@@ -73,7 +73,7 @@ namespace Diş_Kliniği_Otomasyonu
             this.guna2GradientButton5.ForeColor = System.Drawing.Color.Black;
             this.guna2GradientButton5.Location = new System.Drawing.Point(972, 173);
             this.guna2GradientButton5.Name = "guna2GradientButton5";
-            this.guna2GradientButton5.Size = new System.Drawing.Size(97, 41);
+            this.guna2GradientButton5.Size = new System.Drawing.Size(117, 41);
             this.guna2GradientButton5.TabIndex = 48;
             this.guna2GradientButton5.Text = "Yenile";
             // 
@@ -120,59 +120,6 @@ namespace Diş_Kliniği_Otomasyonu
             this.guna2TextBox5.Size = new System.Drawing.Size(274, 41);
             this.guna2TextBox5.TabIndex = 46;
             // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(508, 245);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 24;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(644, 384);
-            this.guna2DataGridView1.TabIndex = 45;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.Gray;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // guna2GradientButton3
             // 
             this.guna2GradientButton3.BorderRadius = 10;
@@ -191,6 +138,7 @@ namespace Diş_Kliniği_Otomasyonu
             this.guna2GradientButton3.Size = new System.Drawing.Size(135, 45);
             this.guna2GradientButton3.TabIndex = 44;
             this.guna2GradientButton3.Text = "Düzenle";
+            this.guna2GradientButton3.Click += new System.EventHandler(this.guna2GradientButton3_Click);
             // 
             // guna2GradientButton2
             // 
@@ -210,6 +158,7 @@ namespace Diş_Kliniği_Otomasyonu
             this.guna2GradientButton2.Size = new System.Drawing.Size(151, 45);
             this.guna2GradientButton2.TabIndex = 43;
             this.guna2GradientButton2.Text = "Sil";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2GradientButton1
             // 
@@ -229,29 +178,30 @@ namespace Diş_Kliniği_Otomasyonu
             this.guna2GradientButton1.Size = new System.Drawing.Size(147, 45);
             this.guna2GradientButton1.TabIndex = 42;
             this.guna2GradientButton1.Text = "Kaydet";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
-            // guna2ComboBox1
+            // SaatCb
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.CadetBlue;
-            this.guna2ComboBox1.BorderRadius = 10;
-            this.guna2ComboBox1.BorderThickness = 3;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.SaatCb.BackColor = System.Drawing.Color.Transparent;
+            this.SaatCb.BorderColor = System.Drawing.Color.CadetBlue;
+            this.SaatCb.BorderRadius = 10;
+            this.SaatCb.BorderThickness = 3;
+            this.SaatCb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.SaatCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SaatCb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SaatCb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.SaatCb.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.SaatCb.ForeColor = System.Drawing.Color.Black;
+            this.SaatCb.ItemHeight = 30;
+            this.SaatCb.Items.AddRange(new object[] {
             "09.00-10.00\t",
             "10.30-11.30",
             "12.00-13.00",
             "13.30-14.30"});
-            this.guna2ComboBox1.Location = new System.Drawing.Point(138, 409);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(274, 36);
-            this.guna2ComboBox1.TabIndex = 37;
+            this.SaatCb.Location = new System.Drawing.Point(138, 409);
+            this.SaatCb.Name = "SaatCb";
+            this.SaatCb.Size = new System.Drawing.Size(274, 36);
+            this.SaatCb.TabIndex = 37;
             // 
             // label7
             // 
@@ -264,23 +214,23 @@ namespace Diş_Kliniği_Otomasyonu
             this.label7.TabIndex = 36;
             this.label7.Text = "Saat:";
             // 
-            // guna2DateTimePicker1
+            // Rtarih
             // 
-            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.CadetBlue;
-            this.guna2DateTimePicker1.BorderRadius = 10;
-            this.guna2DateTimePicker1.BorderThickness = 3;
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(138, 353);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(274, 41);
-            this.guna2DateTimePicker1.TabIndex = 35;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 5, 7, 20, 46, 33, 599);
+            this.Rtarih.BorderColor = System.Drawing.Color.CadetBlue;
+            this.Rtarih.BorderRadius = 10;
+            this.Rtarih.BorderThickness = 3;
+            this.Rtarih.Checked = true;
+            this.Rtarih.FillColor = System.Drawing.Color.White;
+            this.Rtarih.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.Rtarih.ForeColor = System.Drawing.Color.Black;
+            this.Rtarih.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Rtarih.Location = new System.Drawing.Point(138, 353);
+            this.Rtarih.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.Rtarih.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.Rtarih.Name = "Rtarih";
+            this.Rtarih.Size = new System.Drawing.Size(274, 41);
+            this.Rtarih.TabIndex = 35;
+            this.Rtarih.Value = new System.DateTime(2023, 5, 7, 20, 46, 33, 599);
             // 
             // label6
             // 
@@ -337,6 +287,7 @@ namespace Diş_Kliniği_Otomasyonu
             this.label2.Size = new System.Drawing.Size(38, 36);
             this.label2.TabIndex = 2;
             this.label2.Text = "X";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox1
             // 
@@ -358,49 +309,49 @@ namespace Diş_Kliniği_Otomasyonu
             this.label1.TabIndex = 0;
             this.label1.Text = "DİŞ KLİNİĞİ OTOMASYONU";
             // 
-            // guna2ComboBox2
+            // RadCb
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderColor = System.Drawing.Color.CadetBlue;
-            this.guna2ComboBox2.BorderRadius = 10;
-            this.guna2ComboBox2.BorderThickness = 3;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
+            this.RadCb.BackColor = System.Drawing.Color.Transparent;
+            this.RadCb.BorderColor = System.Drawing.Color.CadetBlue;
+            this.RadCb.BorderRadius = 10;
+            this.RadCb.BorderThickness = 3;
+            this.RadCb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.RadCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RadCb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RadCb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RadCb.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.RadCb.ForeColor = System.Drawing.Color.Black;
+            this.RadCb.ItemHeight = 30;
+            this.RadCb.Items.AddRange(new object[] {
             "Kadın",
             "Erkek"});
-            this.guna2ComboBox2.Location = new System.Drawing.Point(138, 302);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.Size = new System.Drawing.Size(274, 36);
-            this.guna2ComboBox2.TabIndex = 49;
+            this.RadCb.Location = new System.Drawing.Point(138, 302);
+            this.RadCb.Name = "RadCb";
+            this.RadCb.Size = new System.Drawing.Size(274, 36);
+            this.RadCb.TabIndex = 49;
             // 
-            // guna2ComboBox3
+            // RtedaviCb
             // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.BorderColor = System.Drawing.Color.CadetBlue;
-            this.guna2ComboBox3.BorderRadius = 10;
-            this.guna2ComboBox3.BorderThickness = 3;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Items.AddRange(new object[] {
+            this.RtedaviCb.BackColor = System.Drawing.Color.Transparent;
+            this.RtedaviCb.BorderColor = System.Drawing.Color.CadetBlue;
+            this.RtedaviCb.BorderRadius = 10;
+            this.RtedaviCb.BorderThickness = 3;
+            this.RtedaviCb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.RtedaviCb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.RtedaviCb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RtedaviCb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.RtedaviCb.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.RtedaviCb.ForeColor = System.Drawing.Color.Black;
+            this.RtedaviCb.ItemHeight = 30;
+            this.RtedaviCb.Items.AddRange(new object[] {
             "Dolgu",
             "Çekim",
             "Kanal Tedavi",
             "Diş Taşı Temizliği"});
-            this.guna2ComboBox3.Location = new System.Drawing.Point(138, 460);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.Size = new System.Drawing.Size(274, 36);
-            this.guna2ComboBox3.TabIndex = 50;
+            this.RtedaviCb.Location = new System.Drawing.Point(138, 460);
+            this.RtedaviCb.Name = "RtedaviCb";
+            this.RtedaviCb.Size = new System.Drawing.Size(274, 36);
+            this.RtedaviCb.TabIndex = 50;
             // 
             // label5
             // 
@@ -413,25 +364,78 @@ namespace Diş_Kliniği_Otomasyonu
             this.label5.TabIndex = 51;
             this.label5.Text = "Tedavi:";
             // 
+            // RandevuDgv
+            // 
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.RandevuDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.RandevuDgv.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.RandevuDgv.ColumnHeadersHeight = 20;
+            this.RandevuDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.RandevuDgv.DefaultCellStyle = dataGridViewCellStyle9;
+            this.RandevuDgv.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.RandevuDgv.Location = new System.Drawing.Point(446, 244);
+            this.RandevuDgv.Name = "RandevuDgv";
+            this.RandevuDgv.RowHeadersVisible = false;
+            this.RandevuDgv.RowHeadersWidth = 51;
+            this.RandevuDgv.RowTemplate.Height = 24;
+            this.RandevuDgv.Size = new System.Drawing.Size(711, 324);
+            this.RandevuDgv.TabIndex = 75;
+            this.RandevuDgv.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.RandevuDgv.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.RandevuDgv.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.RandevuDgv.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.RandevuDgv.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.RandevuDgv.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.RandevuDgv.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.RandevuDgv.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Black;
+            this.RandevuDgv.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.RandevuDgv.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.RandevuDgv.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.RandevuDgv.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.RandevuDgv.ThemeStyle.HeaderStyle.Height = 20;
+            this.RandevuDgv.ThemeStyle.ReadOnly = false;
+            this.RandevuDgv.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.RandevuDgv.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.RandevuDgv.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.RandevuDgv.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.RandevuDgv.ThemeStyle.RowsStyle.Height = 24;
+            this.RandevuDgv.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.LightCoral;
+            this.RandevuDgv.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.RandevuDgv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RandevuDgv_CellClick);
+            // 
             // Randevu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1184, 672);
+            this.Controls.Add(this.RandevuDgv);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.guna2ComboBox3);
-            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.RtedaviCb);
+            this.Controls.Add(this.RadCb);
             this.Controls.Add(this.guna2GradientButton5);
             this.Controls.Add(this.guna2GradientButton4);
             this.Controls.Add(this.guna2TextBox5);
-            this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.guna2GradientButton3);
             this.Controls.Add(this.guna2GradientButton2);
             this.Controls.Add(this.guna2GradientButton1);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.SaatCb);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.guna2DateTimePicker1);
+            this.Controls.Add(this.Rtarih);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -440,10 +444,11 @@ namespace Diş_Kliniği_Otomasyonu
             this.Name = "Randevu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Randevu";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Randevu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RandevuDgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -454,13 +459,12 @@ namespace Diş_Kliniği_Otomasyonu
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton5;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton3;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox SaatCb;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker Rtarih;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -468,8 +472,9 @@ namespace Diş_Kliniği_Otomasyonu
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI2.WinForms.Guna2ComboBox RadCb;
+        private Guna.UI2.WinForms.Guna2ComboBox RtedaviCb;
         private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2DataGridView RandevuDgv;
     }
 }

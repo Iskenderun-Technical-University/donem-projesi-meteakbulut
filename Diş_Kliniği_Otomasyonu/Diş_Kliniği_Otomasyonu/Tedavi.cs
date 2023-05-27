@@ -125,6 +125,11 @@ namespace Diş_Kliniği_Otomasyonu
         {
             Application.Exit();
         }
+
+        private void TedaviDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     }
 

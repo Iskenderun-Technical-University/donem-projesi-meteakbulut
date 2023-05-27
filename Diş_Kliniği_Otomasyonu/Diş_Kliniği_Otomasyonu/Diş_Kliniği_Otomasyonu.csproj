@@ -179,6 +179,7 @@
     <Compile Include="Randevu.Designer.cs">
       <DependentUpon>Randevu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Randevular.cs" />
     <Compile Include="Reçeteler.cs">
       <SubType>Form</SubType>
     </Compile>
