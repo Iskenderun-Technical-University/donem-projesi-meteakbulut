@@ -16,7 +16,7 @@ namespace Diş_Kliniği_Otomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Randevu());
+            Application.Run(new Anasayfa());
         }
     }
 }

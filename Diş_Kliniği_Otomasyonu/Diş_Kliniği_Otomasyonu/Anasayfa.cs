@@ -21,5 +21,33 @@ namespace Diş_Kliniği_Otomasyonu
         {
 
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Randevu rnd = new Randevu();
+            rnd.Show();
+            this.Hide();
+        }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            Hasta hst = new Hasta();
+            hst.Show();
+            this.Hide();
+        }
+
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            Tedavi tdv = new Tedavi();
+            tdv.Show();
+            this.Hide();
+        }
+
+        private void guna2GradientButton4_Click(object sender, EventArgs e)
+        {
+            Reçeteler rct = new Reçeteler();
+            rct.Show();
+            this.Hide();
+        }
     }
 }

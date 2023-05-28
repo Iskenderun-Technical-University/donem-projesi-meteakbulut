@@ -130,6 +130,18 @@ namespace Diş_Kliniği_Otomasyonu
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Anasayfa ana = new Anasayfa();
+            ana.Show();
+            this.Hide();
+        }
     }
     }
 
