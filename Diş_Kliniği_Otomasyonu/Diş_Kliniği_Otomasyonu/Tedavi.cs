@@ -26,7 +26,7 @@ namespace Diş_Kliniği_Otomasyonu
                 Hs.HastaEkle(query);
                 MessageBox.Show("Tedavi Başarıyla Eklendi");
                 uyeler();
-                reset();
+                Reset();
 
 
             }
@@ -51,7 +51,7 @@ namespace Diş_Kliniği_Otomasyonu
                     Hs.HastaSil(query);
                     MessageBox.Show("Tedavi işlemi başarıyla güncellendi.");
                     uyeler();
-                    reset();
+                    Reset();
                 }
                 catch (Exception Ex)
                 {
@@ -76,7 +76,7 @@ namespace Diş_Kliniği_Otomasyonu
                     Hs.HastaSil(query);
                     MessageBox.Show("Tedavi başarıyla silindi.");
                     uyeler();
-                    reset();
+                    Reset();
 
                 }
                 catch (Exception Ex)
@@ -93,7 +93,7 @@ namespace Diş_Kliniği_Otomasyonu
             DataSet ds = Hs.ShowHasta(query);
             TedaviDGV.DataSource = ds.Tables[0];
         }
-        void reset()
+        void Reset()
         {
             TedaviAdiTb.Text = "";
             TutarTb.Text = "";
@@ -102,7 +102,7 @@ namespace Diş_Kliniği_Otomasyonu
         private void Tedavi_Load(object sender, EventArgs e)
         {
             uyeler();
-            reset();
+            Reset();
         }
 
         private void TedaviDGV_CellClick(object sender, DataGridViewCellEventArgs e)

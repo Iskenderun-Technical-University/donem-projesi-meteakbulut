@@ -157,6 +157,7 @@
     <Compile Include="Anasayfa.Designer.cs">
       <DependentUpon>Anasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1R.cs" />
     <Compile Include="ConnectionString.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
