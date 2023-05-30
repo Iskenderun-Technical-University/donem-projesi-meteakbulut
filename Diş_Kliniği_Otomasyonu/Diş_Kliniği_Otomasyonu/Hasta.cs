@@ -24,6 +24,15 @@ namespace Diş_Kliniği_Otomasyonu
             DataSet ds = Hs.ShowHasta(query);
             HastaDGV.DataSource = ds.Tables[0];
         }
+
+        void filter()
+        {
+            Hastalar Hs = new Hastalar();
+            string query = "select * from HastaTbl where HAd like '%"+AraTb.Text+"%'";
+            DataSet ds = Hs.ShowHasta(query);
+            HastaDGV.DataSource = ds.Tables[0];
+        }
+
         void Reset()
         {
             HAdSoyadTb.Text = "";
@@ -149,6 +158,11 @@ namespace Diş_Kliniği_Otomasyonu
         private void HastaDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void AraTb_TextChanged(object sender, EventArgs e)
+        {
+            filter();
         }
     }
 }

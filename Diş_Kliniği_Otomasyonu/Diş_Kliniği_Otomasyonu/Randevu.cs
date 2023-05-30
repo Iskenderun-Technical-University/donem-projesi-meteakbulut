@@ -60,6 +60,13 @@ namespace Diş_Kliniği_Otomasyonu
             DataSet ds = Hs.ShowHasta(query);
             RandevuDgv.DataSource = ds.Tables[0];
         }
+        void filter()
+        {
+            Hastalar Hs = new Hastalar();
+            string query = "select * from RandevuTbl where Hasta like '%" + araTb.Text + "%'";
+            DataSet ds = Hs.ShowHasta(query);
+            RandevuDgv.DataSource = ds.Tables[0];
+        }
         void Reset()
         {
             RadCb.SelectedIndex = -1;
@@ -167,6 +174,11 @@ namespace Diş_Kliniği_Otomasyonu
             Anasayfa ana = new Anasayfa();
             ana.Show();
             this.Hide();
+        }
+
+        private void araTb_TextChanged(object sender, EventArgs e)
+        {
+            filter();
         }
     }
 }

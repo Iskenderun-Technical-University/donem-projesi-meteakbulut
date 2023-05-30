@@ -93,6 +93,15 @@ namespace Diş_Kliniği_Otomasyonu
             DataSet ds = Hs.ShowHasta(query);
             TedaviDGV.DataSource = ds.Tables[0];
         }
+
+        void filter()
+        {
+            Hastalar Hs = new Hastalar();
+            string query = "select * from TedaviTbl where TAd like '%" + ARATB.Text + "%'";
+            DataSet ds = Hs.ShowHasta(query);
+            TedaviDGV.DataSource = ds.Tables[0];
+        }
+
         void Reset()
         {
             TedaviAdiTb.Text = "";
@@ -141,6 +150,11 @@ namespace Diş_Kliniği_Otomasyonu
             Anasayfa ana = new Anasayfa();
             ana.Show();
             this.Hide();
+        }
+
+        private void ARATB_TextChanged(object sender, EventArgs e)
+        {
+            filter();
         }
     }
     }

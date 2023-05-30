@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Diş_Kliniği_Otomasyonu
@@ -75,6 +76,14 @@ namespace Diş_Kliniği_Otomasyonu
             DataSet ds = Hs.ShowHasta(query);
             ReceteDGV.DataSource = ds.Tables[0];
         }
+        void filter()
+        {
+            Hastalar Hs = new Hastalar();
+            string query = "select * from ReceteTbl where HasAd like '%" + AraTB.Text + "%'";
+            DataSet ds = Hs.ShowHasta(query);
+            ReceteDGV.DataSource = ds.Tables[0];
+        }
+
         void Reset()
         {
             HastaASCb.SelectedItem = "";
@@ -179,6 +188,32 @@ namespace Diş_Kliniği_Otomasyonu
                 }
 
             }
+        }
+
+        private void AraTB_TextChanged(object sender, EventArgs e)
+        {
+            filter();
+        }
+        Bitmap bitmap;
+        private void guna2GradientButton3_Click(object sender, EventArgs e)
+        {
+            int height = ReceteDGV.Height;
+            ReceteDGV.Height = ReceteDGV.RowCount * ReceteDGV.RowTemplate.Height * 2;
+            bitmap = new Bitmap(ReceteDGV.Width, ReceteDGV.Height);
+            ReceteDGV.DrawToBitmap(bitmap, new Rectangle(0, 10, ReceteDGV.Width, ReceteDGV.Height));
+            ReceteDGV.Height = height;
+            printPreviewDialog1.ShowDialog();
+            
+        }
+
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(bitmap, 0, 0);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
