@@ -49,5 +49,10 @@ namespace Diş_Kliniği_Otomasyonu
             rct.Show();
             this.Hide();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

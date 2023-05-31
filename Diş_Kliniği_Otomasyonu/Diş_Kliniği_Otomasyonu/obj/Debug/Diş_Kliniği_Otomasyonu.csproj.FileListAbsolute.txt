@@ -68,7 +68,6 @@ C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otoma
 C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\bin\Debug\Bunifu.UI.WinForms.BunifuUserControl.xml
 C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.csproj.AssemblyReference.cache
 C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.Anasayfa.resources
-C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.Form1.resources
 C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.Properties.Resources.resources
 C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.csproj.GenerateResource.cache
 C:\Users\meteh\OneDrive\Masaüstü\donem-projesi-meteakbulut\Diş_Kliniği_Otomasyonu\Diş_Kliniği_Otomasyonu\obj\Debug\Diş_Kliniği_Otomasyonu.csproj.CoreCompileInputs.cache

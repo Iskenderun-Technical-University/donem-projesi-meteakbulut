@@ -293,8 +293,8 @@ namespace Diş_Kliniği_Otomasyonu
             this.guna2GradientButton7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton7.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2GradientButton7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton7.FillColor = System.Drawing.Color.Fuchsia;
-            this.guna2GradientButton7.FillColor2 = System.Drawing.Color.Red;
+            this.guna2GradientButton7.FillColor = System.Drawing.Color.CadetBlue;
+            this.guna2GradientButton7.FillColor2 = System.Drawing.Color.LightCoral;
             this.guna2GradientButton7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.guna2GradientButton7.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton7.Location = new System.Drawing.Point(881, 43);

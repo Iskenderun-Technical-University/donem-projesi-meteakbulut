@@ -159,12 +159,6 @@
     </Compile>
     <Compile Include="Class1R.cs" />
     <Compile Include="ConnectionString.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Hasta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,9 +190,6 @@
     <Compile Include="Tedaviler.cs" />
     <EmbeddedResource Include="Anasayfa.resx">
       <DependentUpon>Anasayfa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Hasta.resx">
       <DependentUpon>Hasta.cs</DependentUpon>
